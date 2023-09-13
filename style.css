@@ -1,0 +1,395 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+    font-family: roboto, arial ;
+    transition: 0.15s ;
+}
+
+.app{
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+.header{
+    display: flex ;
+    justify-content: center ;
+    width: 100% ;
+    align-items: center ;
+}
+
+.header img{
+    width: 40px ;
+    margin-left: 10px ;
+}
+
+.logo-text{
+    font-family: 'Pacifico', cursive ;
+    color: white ;
+    font-size: 30px ;
+    font-weight: 500 ;
+}
+
+body{
+    display: flex ;
+    justify-content: center ;
+    padding-top: 10px ;
+    background-color: rgb(20,20,20) ;
+    padding-bottom: 30px ;
+}
+
+.game-grid{
+    margin-top: 10px ;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center ;
+    width: 600px ;
+    position: relative ;
+}
+
+/*line*/
+.line-main{
+    opacity: 0 ;
+    z-index: -100 ;
+    position: absolute ;
+}
+
+.line1{
+    position: absolute ;
+    width: 12px ;
+    height: 600px  ;
+    border-radius: 8px ;
+}
+
+.line-color1{
+    background-color: rgb(3,218,198) ;
+}
+
+.line-color2{
+    background-color: white ;
+}
+
+.win1{
+    left: 88px ;
+}
+
+.win2{
+    left: 291px ;
+}
+
+.win3{
+    left: 496px ;
+}
+
+.line2{
+    height: 12px ;
+    width: 600px ;
+}
+
+.win4{
+    left: 0px ;
+    top: 88px ;
+}
+
+.win5{
+    left: 0px ;
+    top: 291px ;
+}
+
+.win6{
+    left: 0px ;
+    top: 496px ;
+}
+
+.line3{
+    position: absolute ;
+    width: 12px ;
+    height: 800px  ;
+    border-radius: 8px ;
+}
+
+.win7{
+    left: 291px ;
+    transform: rotate(45deg) ;
+    top: -102px ;
+    
+}
+
+.win8{
+    left: 291px ;
+    transform: rotate(-45deg) ;
+    top: -102px ;
+    
+}
+
+.line-main{
+    opacity: 0 ;
+    z-index: -100 ;
+}
+
+.line-on{
+    opacity: 1 ;
+    z-index: 100 ;
+}
+
+.grid-box{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer ;
+    height: 200px ;
+    width: 200px ;
+    background-color: rgb(20,20,20) ;
+    border: none ;
+}
+
+.grid-box:hover{
+    background-color: rgb(23, 23, 23) ;
+}
+
+.A1{
+    border-right: solid white 10px ;
+    border-bottom: solid white 10px ;
+}
+
+.A2{
+    border-right: solid white 10px ;
+    border-bottom: solid white 10px ;
+}
+
+.A3{
+    border-bottom: solid white 10px ;
+}
+
+.B1{
+    border-right: solid white 10px ;
+    border-bottom: solid white 10px ;
+}
+
+.B2{
+    border-right: solid white 10px ;
+    border-bottom: solid white 10px ;
+}
+
+.B3{
+    border-bottom: solid white 10px ;
+}
+
+.C1{
+    border-right: solid white 10px ;
+}
+
+.C2{
+    border-right: solid white 10px ;
+}
+
+.symbol-button{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    margin-right: 4px ;
+    height: 40px ;
+    width: 40px ;
+    border-radius: 4px ;
+    border: none ;
+    cursor: pointer ;
+    background-color: rgb(98,0,238) ;
+}
+
+.symbol-button:hover, .function-button:hover{
+    background-color: rgb(86, 1, 204) ;
+}
+
+.difficulty-options{
+    color: black ;
+    background-color: white ;
+    border: none ;
+    cursor: pointer ;
+    font-size: 14px ;
+    width: 75px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    text-align: center ;
+}
+
+.difficulty-options:focus{
+    outline: none ;
+}
+
+.select-symbol{
+    display: flex ;
+    justify-content: space-around ;
+    width: 600px ;
+    align-items: center ;
+    margin-top: 10px ;
+}
+
+.symbol-button img{
+    width: 15px ;
+}
+
+.difficulty-label{
+    color: white ;
+    margin-bottom: 14px ;
+    font-size: 16px ;
+    font-weight: 500 ;
+}
+
+.game-difficulty-settings{
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    width: 50px ;
+}
+
+.actual-symbol{
+    width: 80% ;
+}
+
+.play-game{
+    display: flex ;
+    justify-content: center ;
+    margin-top: 14px ;
+}
+
+.messages{
+    height: 40px ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.win{
+    color: white ;
+    font-size: 20px ;
+}
+
+.footer{
+    margin-top: 30px ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+.function-button{
+    color: white ;
+    font-size: 15px ;
+    background-color: rgb(98,0,238) ;
+    border: none ;
+    cursor: pointer ;
+    width: 120px ;
+    height: 30px ;
+    border-radius: 4px ;
+}
+
+.score-board{
+    color: white ;
+    font-size: 18px ;
+}
+
+@media(max-width: 780px){
+    .select-symbol{
+        display: flex ;
+        justify-content: space-around ;
+        width: 400px ;
+        align-items: center ;
+        margin-top: 10px ;
+    }
+
+    .select-symbol{
+        display: flex ;
+        justify-content: space-around ;
+        width: 400px ;
+        align-items: center ;
+        margin-top: 10px ;
+    }
+
+    body{
+        display: flex ;
+        justify-content: center ;
+        padding-top: 40px ;
+        background-color: rgb(20,20,20) ;
+        height: 100vh ;
+        align-items: start ;
+        padding-bottom: 0px ;
+    }
+
+    .game-grid{
+        margin-top: 10px ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr 1fr ;
+        align-items: center ;
+        width: 300px ;
+        position: relative ;
+    }
+    
+    .grid-box{
+        display: flex ;
+        align-items: center ;
+        justify-content: center ;
+        cursor: pointer ;
+        height: 100px ;
+        width: 100px ;
+    }
+
+    .line1{
+        position: absolute ;
+        width: 10px ;
+        height: 300px  ;
+        border-radius: 8px ;
+    }
+
+    .win1{
+        left: 42px ;
+    }
+    
+    .win2{
+        left: 142px ;
+    }
+    
+    .win3{
+        left: 246px ;
+    }
+
+    .line2{
+        height: 10px ;
+        width: 300px ;
+    }
+    
+    .win4{
+        left: 0px ;
+        top: 42px ;
+    }
+    
+    .win5{
+        left: 0px ;
+        top: 142px ;
+    }
+    
+    .win6{
+        left: 0px ;
+        top: 246px ;
+    }
+
+    .line3{
+        position: absolute ;
+        width: 10px ;
+        height: 500px  ;
+        border-radius: 8px ;
+    }
+    
+    .win7{
+        left: 142px ;
+        transform: rotate(45deg) ;
+        top: -102px ;
+    }
+    
+    .win8{
+        left: 142px ;
+        transform: rotate(-45deg) ;
+        top: -102px ;
+    }
+}

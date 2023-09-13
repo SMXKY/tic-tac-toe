@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <p class="logo-text">Tic Tac Toe</p>
+            <img src="images and icons/tic-tac-toe.png" alt="">
+        </div>
+
+        <div class="select-symbol">
+            <button class="js-x-symbol-button symbol-button">
+                <img src="images and icons/close.png" alt="">
+            </button>
+
+            <div class="game-difficulty-settings">   
+                <p class="difficulty-label">Difficulty</p> 
+                <select name="" id="" class="js-game-difficulty difficulty-options">
+                    <option value="hard">Hard</option>
+                    <option value="easy">Easy</option>
+                </select>
+
+                <button class="js-play-button symbol-button" style="border-radius: 100%; margin-top: 14px ;">
+                    <img src="images and icons/play-button-arrowhead.png" alt="" style="margin-left: 3px ;">
+                </button>
+            </div>
+
+            <button class="js-o-symbol-button symbol-button">
+                <img src="images and icons/rec.png" alt="">
+            </button>
+        </div>
+        
+        <div class="messages">
+            <p class="js-score-tracker win"></p>
+        </div>
+
+        <div class="game-grid">
+            <button class="js-A1 grid-box A1"></button>
+            <button class="js-A2 grid-box A2"></button>
+            <button class="js-A3 grid-box A3"></button>
+            <button class="js-B1 grid-box B1"></button>
+            <button class="js-B2 grid-box B2"></button>
+            <button class="js-B3 grid-box B3"></button>
+            <button class="js-C1 grid-box C1"></button>
+            <button class="js-C2 grid-box C2"></button>
+            <button class="js-C3 grid-box C3"></button>
+            
+            <div class="js-line line-main"></div>
+        </div>
+
+        <div class="footer">
+            <div class="functionalities">
+                <button class="js-restart-button function-button" style="margin-bottom: 15px ;">Play again</button>
+            </div>
+    
+            <div class="js-score-board score-board">
+            </div>
+    
+            <button class="js-reset-score function-button" style="margin-top: 15px ;">Reset Score</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
